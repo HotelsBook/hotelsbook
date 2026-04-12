@@ -1,6 +1,6 @@
-# HotelsBook Configuration - Professional
-AUTHOR = 'HotelsBook Consultoria e Hospitalidade LTDA'
-SITENAME = 'HotelsBook'
+AUTHOR = 'HotelsBook'
+SITENAME = 'HotelsBook Consultoria & Hospitalidade'
+# URL completa do site no GitHub Pages (obrigatório para links funcionarem)
 SITEURL = 'https://hotelsbook.github.io/hotelsbook'
 
 PATH = 'content'
@@ -9,11 +9,10 @@ THEME = 'theme'
 TIMEZONE = 'America/Fortaleza'
 DEFAULT_LANG = 'pt'
 MARKUP = ('md',)
-SLUGIFY_SOURCE = 'basename'
 
-PLUGINS = []
+RELATIVE_URLS = False
 
-DISPLAY_PAGES_ON_MENU = False  # Importante: usa apenas MENUITEMS
+DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
     ('Analytics', '/analytics.html'),
     ('Conciergee', '/conciergee.html'),

@@ -9,8 +9,8 @@ Status: published
     <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Evolução hoteleira com inteligência de dados e suporte especializado</h1>
     <p class="text-xl text-blue-100 mb-10">Unimos consultoria estratégica em Revenue Management com concierge dedicado para viajantes executivos e estudantes. Tecnologia proprietária desenvolvida no Cariri para todo o Brasil.</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/analytics.html" class="bg-lightblue hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-300 shadow-lg">Conheça o HotelsBook Analytics</a>
-      <a href="/conciergee.html" class="border-2 border-white hover:bg-white hover:text-navy font-semibold py-4 px-8 rounded-lg transition duration-300">Conheça o Conciergee</a>
+      <a href="https://hotelsbook.github.io/hotelsbook/analytics.html" class="bg-lightblue hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-300 shadow-lg">Conheça o HotelsBook Analytics</a>
+      <a href="https://hotelsbook.github.io/hotelsbook/conciergee.html" class="border-2 border-white hover:bg-white hover:text-navy font-semibold py-4 px-8 rounded-lg transition duration-300">Conheça o Conciergee</a>
     </div>
   </div>
 </section>
@@ -26,7 +26,7 @@ Status: published
         <li class="flex items-start"><span class="text-lightblue mr-2">✓</span> Sazonalidade local (ExpoCrato, romarias, concursos)</li>
         <li class="flex items-start"><span class="text-lightblue mr-2">✓</span> Planos a partir de R$49/mês</li>
       </ul>
-      <a href="/analytics.html" class="inline-block text-lightblue font-semibold hover:underline">Ver funcionalidades completas →</a>
+      <a href="https://hotelsbook.github.io/hotelsbook/analytics.html" class="inline-block text-lightblue font-semibold hover:underline">Ver funcionalidades completas →</a>
     </div>
     
     <div class="p-8 border border-gray-200 rounded-xl hover:shadow-2xl transition duration-300 bg-white">
@@ -38,7 +38,7 @@ Status: published
         <li class="flex items-start"><span class="text-lightblue mr-2">✓</span> Viagens corporativas 24h</li>
         <li class="flex items-start"><span class="text-lightblue mr-2">✓</span> Parcerias B2B disponíveis</li>
       </ul>
-      <a href="/conciergee.html" class="inline-block text-lightblue font-semibold hover:underline">Saiba como funciona →</a>
+      <a href="https://hotelsbook.github.io/hotelsbook/conciergee.html" class="inline-block text-lightblue font-semibold hover:underline">Saiba como funciona →</a>
     </div>
   </div>
 </section>
