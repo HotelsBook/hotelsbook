@@ -1,5 +1,5 @@
 Title: HotelsBook - Consultoria Estratégica e Inteligência para Hotelaria
-Description: Consultoria hoteleira e plataforma de Revenue Management com IA. Do Cariri para o Brasil.
+Description: Consultoria hoteleira, Revenue Management e agenciamento de reservas corporativas.
 Slug: index
 Save_as: index.html
 Status: published
@@ -7,7 +7,7 @@ Status: published
 <section class="bg-navy text-white py-20 px-4 text-center">
   <div class="max-w-4xl mx-auto">
     <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Inteligência e consultoria estratégica para a hotelaria brasileira</h1>
-    <p class="text-xl text-blue-100 mb-10">Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar receitas e escalar negócios. Atuação presencial e digital, com raiz no Cariri e projeção nacional.</p>
+    <p class="text-xl text-blue-100 mb-10">Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar receitas e escalar negócios. Do Cariri para todo o Brasil.</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="{{ SITEURL }}/parcerias.html" class="bg-lightblue hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-300 shadow-lg">Fale com um Consultor</a>
       <a href="{{ SITEURL }}/analytics.html" class="border-2 border-white hover:bg-white hover:text-navy font-semibold py-4 px-8 rounded-lg transition duration-300">Conheça o Analytics</a>
@@ -23,7 +23,7 @@ Status: published
       </div>
       <h3 class="text-xl font-bold text-navy mb-3">Consultoria Estratégica</h3>
       <p class="text-gray-600 mb-4 text-sm leading-relaxed">Diagnóstico operacional, precificação inteligente e planejamento tático para hotéis e pousadas. Atendimento presencial ou remoto, com foco em resultados mensuráveis.</p>
-      <a href="{{ SITEURL }}/parcerias.html" class="text-lightblue font-medium text-sm hover:underline">Solicitar diagnóstico →</a>
+      <a href="{{ SITEURL }}/parcerias.html" class="text-lightblue font-medium text-sm hover:underline">Solicitar diagnóstico</a>
     </div>
     
     <div class="p-8 border border-gray-200 rounded-xl hover:shadow-lg transition duration-300 bg-white">
@@ -31,17 +31,17 @@ Status: published
         <svg class="w-6 h-6 text-lightblue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
       </div>
       <h3 class="text-xl font-bold text-navy mb-3">HotelsBook Analytics</h3>
-      <p class="text-gray-600 mb-4 text-sm leading-relaxed">Plataforma de Revenue Management com parser adaptativo, IA generativa e previsão de sazonalidade. Conecte seus relatórios (PDF/Excel/CSV) e obtenha insights em minutos.</p>
-      <a href="{{ SITEURL }}/analytics.html" class="text-lightblue font-medium text-sm hover:underline">Ver funcionalidades →</a>
+      <p class="text-gray-600 mb-4 text-sm leading-relaxed">Plataforma de Revenue Management com parser adaptativo, IA generativa e previsão de sazonalidade. Conecte seus relatórios e obtenha insights em minutos.</p>
+      <a href="{{ SITEURL }}/analytics.html" class="text-lightblue font-medium text-sm hover:underline">Ver funcionalidades</a>
     </div>
 
     <div class="p-8 border border-gray-200 rounded-xl hover:shadow-lg transition duration-300 bg-white">
       <div class="w-12 h-12 bg-lightblue/10 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-lightblue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <svg class="w-6 h-6 text-lightblue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
       </div>
-      <h3 class="text-xl font-bold text-navy mb-3">Inovação & Mobilidade</h3>
-      <p class="text-gray-600 mb-4 text-sm leading-relaxed">Conciergee: plataforma em desenvolvimento para otimização de viagens corporativas e acadêmicas. Curadoria inteligente, logística integrada e modelo de comissão por reserva confirmada.</p>
-      <a href="{{ SITEURL }}/conciergee.html" class="text-lightblue font-medium text-sm hover:underline">Conhecer o projeto →</a>
+      <h3 class="text-xl font-bold text-navy mb-3">Agência de Reservas</h3>
+      <p class="text-gray-600 mb-4 text-sm leading-relaxed">Gestão completa de hospedagem para empresas e universidades. Negociação direta com hotéis, controle de políticas de viagem e relatórios de gastos.</p>
+      <a href="{{ SITEURL }}/parcerias.html" class="text-lightblue font-medium text-sm hover:underline">Propor parceria</a>
     </div>
   </div>
 </section>

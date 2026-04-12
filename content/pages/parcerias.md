@@ -10,21 +10,21 @@ Status: published
 
   <div class="grid gap-6 mb-12">
     <div class="p-6 border border-gray-200 rounded-xl hover:border-lightblue transition">
-      <h3 class="font-bold text-navy mb-2">🏨 Para Hoteleiros</h3>
+      <h3 class="font-bold text-navy mb-2">Para Hoteleiros</h3>
       <p class="text-gray-600 text-sm mb-4">Consultoria estratégica, diagnóstico de Revenue Management ou demonstração do Analytics.</p>
-      <a href="https://wa.me/55889XXXXXXXX?text=Olá, sou hoteleiro e gostaria de saber mais sobre a consultoria e o Analytics." target="_blank" class="text-lightblue font-medium text-sm hover:underline">WhatsApp Comercial (B2B) →</a>
+      <a href="https://wa.me/+5585984052096?text=Olá, sou hoteleiro e gostaria de saber mais sobre a consultoria e o Analytics." target="_blank" class="text-lightblue font-medium text-sm hover:underline">WhatsApp Comercial (B2B)</a>
     </div>
     
     <div class="p-6 border border-gray-200 rounded-xl hover:border-lightblue transition">
-      <h3 class="font-bold text-navy mb-2">🤝 Para Empresas e Instituições</h3>
-      <p class="text-gray-600 text-sm mb-4">Programas de mobilidade corporativa, parcerias com Conciergee ou propostas de integração.</p>
-      <a href="mailto:parcerias@hotelsbook.com.br" class="text-lightblue font-medium text-sm hover:underline">parcerias@hotelsbook.com.br →</a>
+      <h3 class="font-bold text-navy mb-2">Para Empresas e Universidades</h3>
+      <p class="text-gray-600 text-sm mb-4">Agenciamento de reservas corporativas, gestão de viagens para colaboradores ou estudantes, e parcerias institucionais.</p>
+      <a href="mailto:parcerias@hotelsbook.com.br" class="text-lightblue font-medium text-sm hover:underline">parcerias@hotelsbook.com.br</a>
     </div>
 
     <div class="p-6 border border-gray-200 rounded-xl hover:border-lightblue transition">
-      <h3 class="font-bold text-navy mb-2">📩 Contato Geral</h3>
+      <h3 class="font-bold text-navy mb-2">Contato Geral</h3>
       <p class="text-gray-600 text-sm mb-4">Dúvidas sobre planos, suporte técnico ou imprensa.</p>
-      <a href="mailto:contato@hotelsbook.com.br" class="text-lightblue font-medium text-sm hover:underline">contato@hotelsbook.com.br →</a>
+      <a href="mailto:contato@hotelsbook.com.br" class="text-lightblue font-medium text-sm hover:underline">contato@hotelsbook.com.br</a>
     </div>
   </div>
 
