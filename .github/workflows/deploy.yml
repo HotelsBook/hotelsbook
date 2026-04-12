@@ -17,10 +17,19 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install pelican[markdown]
+
+      - name: List files (debug)
+        run: |
+          echo "=== Files in repository ==="
+          ls -la
+          echo "=== pelicanconf.py content ==="
+          cat pelicanconf.py
 
       - name: Build site
-        run: pelican content -o output -s publishconf.py
+        run: pelican content -o output -s pelicanconf.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
