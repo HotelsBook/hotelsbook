@@ -1,4 +1,4 @@
-Title: HotelsBook - A Força que Impulsiona o Futuro da Hospitalidade
+Title: HotelsBook - A sua referência em serviços de hospitalidade
 Date: 2024-05-20
 Slug: index
 Save_as: index.html
