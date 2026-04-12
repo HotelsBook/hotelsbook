@@ -15,7 +15,6 @@ RELATIVE_URLS = False
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
     ('Analytics', '/analytics.html'),
-    ('Conciergee', '/conciergee.html'),
-    ('Parcerias', '/parcerias.html'),
+    ('Agência de Reservas', '/parcerias.html'),
     ('Sobre', '/sobre.html'),
 ]

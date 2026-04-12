@@ -2,7 +2,7 @@ Title: HotelsBook Conciergee
 Description: Plataforma em desenvolvimento para otimização de viagens corporativas e acadêmicas com curadoria inteligente.
 Slug: conciergee
 Save_as: conciergee.html
-Status: published
+Status: draft
 
 <section class="max-w-4xl mx-auto px-4 py-16">
   <h1 class="text-3xl md:text-4xl font-bold text-navy mb-4">HotelsBook Conciergee</h1>
