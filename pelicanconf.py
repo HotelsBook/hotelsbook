@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+AUTHOR = 'HotelsBook'
+SITENAME = 'HotelsBook Consultoria & Hospitalidade'
+SITEURL = ''
+
+PATH = 'content'
+OUTPUT_PATH = 'output'
+THEME = 'theme'
+TIMEZONE = 'America/Fortaleza'
+DEFAULT_LANG = 'pt'
+MARKUP = ('md',)
+SLUGIFY_SOURCE = 'basename'
+
+PLUGINS = []
+
+DISPLAY_PAGES_ON_MENU = True
+MENUITEMS = [
+    ('Início', '/'),
+    ('Analytics', '/analytics.html'),
+    ('Travel', '/travel.html'),
+    ('Parcerias', '/parcerias.html'),
+    ('Sobre', '/sobre.html'),
+]

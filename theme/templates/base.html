@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
+  <meta name="description" content="Consultoria hoteleira e concierge para viajantes executivos e estudantis.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0A2540',
+            lightblue: '#4A90E2',
+            graybrand: '#6B7280',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800 bg-white">
+  <nav class="bg-navy text-white p-4 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="/" class="text-xl font-bold tracking-wide">HotelsBook</a>
+      <div class="hidden md:flex gap-6 text-sm font-medium">
+        {% for title, link in MENUITEMS %}
+          <a href="{{ link }}" class="hover:text-lightblue transition">{{ title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </nav>
+
+  <main class="min-h-screen">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="bg-gray-50 border-t mt-12 py-8 text-center text-graybrand text-sm">
+    <p>© HotelsBook Consultoria e Hospitalidade LTDA</p>
+    <p class="mt-2">Juazeiro do Norte, CE | Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
