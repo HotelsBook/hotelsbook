@@ -1,6 +1,6 @@
-# HotelsBook Configuration - Fixed
-AUTHOR = 'HotelsBook'
-SITENAME = 'HotelsBook Consultoria & Hospitalidade'
+# HotelsBook Configuration - Professional
+AUTHOR = 'HotelsBook Consultoria e Hospitalidade LTDA'
+SITENAME = 'HotelsBook'
 SITEURL = 'https://hotelsbook.github.io/hotelsbook'
 
 PATH = 'content'
@@ -13,11 +13,10 @@ SLUGIFY_SOURCE = 'basename'
 
 PLUGINS = []
 
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False  # Importante: usa apenas MENUITEMS
 MENUITEMS = [
-    ('Início', ''),
-    ('Analytics', 'analytics.html'),
-    ('Conciergee', 'conciergee.html'),
-    ('Parcerias', 'parcerias.html'),
-    ('Sobre', 'sobre.html'),
+    ('Analytics', '/analytics.html'),
+    ('Conciergee', '/conciergee.html'),
+    ('Parcerias', '/parcerias.html'),
+    ('Sobre', '/sobre.html'),
 ]
