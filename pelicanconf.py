@@ -19,7 +19,7 @@ DISPLAY_PAGES_ON_MENU = True
 MENUITEMS = [
     ('Início', '/'),
     ('Analytics', '/analytics.html'),
-    ('Travel', '/travel.html'),
+    ('Conciergee', '/conciergee.html'),
     ('Parcerias', '/parcerias.html'),
     ('Sobre', '/sobre.html'),
 ]

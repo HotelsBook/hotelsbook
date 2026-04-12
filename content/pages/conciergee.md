@@ -1,7 +1,7 @@
 Title: HotelsBook Conciergee
 Date: 2024-05-20
-Slug: concierge
-Save_as: concierge.html
+Slug: conciergee
+Save_as: conciergee.html
 Status: published
 
 # 🧳 HotelsBook Conciergee
