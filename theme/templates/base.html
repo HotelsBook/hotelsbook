@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ SITENAME }}{% if page and page.title %} - {{ page.title }}{% endif %}</title>
-  <meta name="description" content="Consultoria hoteleira e concierge para viajantes executivos e estudantis no Brasil.">
+  <title>{% if page and page.title %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}</title>
+  <meta name="description" content="{% if page and page.description %}{{ page.description }}{% else %}Consultoria hoteleira e concierge corporativo com inteligência de dados e suporte especializado.{% endif %}">
+  
+  <!-- Open Graph / SEO Básico -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ SITEURL }}">
+  <meta property="og:title" content="{% if page and page.title %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}">
+  <meta property="og:description" content="{% if page and page.description %}{{ page.description }}{% else %}Consultoria hoteleira e concierge corporativo com inteligência de dados.{% endif %}">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -14,58 +21,72 @@
             navy: '#0A2540',
             lightblue: '#4A90E2',
             graybrand: '#6B7280',
+            lightgray: '#F8FAFC',
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['Inter', 'system-ui', 'sans-serif'],
           }
         }
       }
     }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    .nav-link { @apply hover:text-lightblue transition-colors duration-200; }
+    .btn-primary { @apply bg-lightblue hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md; }
+    .btn-outline { @apply border-2 border-navy text-navy hover:bg-navy hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-200; }
+  </style>
 </head>
-<body class="font-sans text-gray-800 bg-white">
-  <nav class="bg-navy text-white p-4 shadow-lg sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
-      <!-- Logo atua como botão Home -->
-      <a href="{{ SITEURL }}/" class="text-2xl font-bold tracking-tight hover:text-lightblue transition">HotelsBook</a>
-      
-      <div class="flex gap-4 md:gap-6 text-sm font-medium items-center mt-2 md:mt-0">
-        {% for title, link in MENUITEMS %}
-          <a href="{{ SITEURL }}{{ link }}" class="hover:text-lightblue transition px-2 py-1">{{ title }}</a>
-        {% endfor %}
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+  <nav class="bg-white/95 backdrop-blur border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <a href="{{ SITEURL }}/" class="text-xl font-bold text-navy tracking-tight hover:text-lightblue transition">HotelsBook</a>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
+          {% for title, link in MENUITEMS %}
+            <a href="{{ SITEURL }}{{ link }}" class="nav-link">{{ title }}</a>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </nav>
 
-  <main class="min-h-screen">
+  <main class="flex-grow">
     {% block content %}{% endblock %}
   </main>
 
-  <footer class="bg-navy text-white border-t border-gray-700 mt-20 py-12">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-3 gap-8 mb-8">
-        <div>
-          <h4 class="font-bold text-lg mb-3">HotelsBook</h4>
-          <p class="text-gray-400 text-sm leading-relaxed">Consultoria e Hospitalidade LTDA<br>Juazeiro do Norte, CE</p>
+  <footer class="bg-navy text-white mt-auto">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
+        <div class="md:col-span-2">
+          <h4 class="text-lg font-bold mb-3">HotelsBook Consultoria & Hospitalidade</h4>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-md">
+            Tecnologia e inteligência regional para profissionalizar a gestão hoteleira e oferecer suporte logístico seguro a viajantes corporativos e estudantes.
+          </p>
         </div>
         <div>
-          <h4 class="font-bold text-lg mb-3">Soluções</h4>
-          <ul class="text-gray-400 text-sm space-y-2">
+          <h5 class="font-semibold mb-3 text-gray-200">Soluções</h5>
+          <ul class="space-y-2 text-sm text-gray-400">
             <li><a href="{{ SITEURL }}/analytics.html" class="hover:text-lightblue">HotelsBook Analytics</a></li>
             <li><a href="{{ SITEURL }}/conciergee.html" class="hover:text-lightblue">HotelsBook Conciergee</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="font-bold text-lg mb-3">Contato</h4>
-          <ul class="text-gray-400 text-sm space-y-2">
-            <li><a href="{{ SITEURL }}/parcerias.html" class="hover:text-lightblue">Parcerias</a></li>
-            <li><a href="{{ SITEURL }}/sobre.html" class="hover:text-lightblue">Sobre nós</a></li>
+          <h5 class="font-semibold mb-3 text-gray-200">Institucional</h5>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="{{ SITEURL }}/sobre.html" class="hover:text-lightblue">Sobre Nós</a></li>
+            <li><a href="{{ SITEURL }}/parcerias.html" class="hover:text-lightblue">Parcerias B2B</a></li>
           </ul>
         </div>
       </div>
-      <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-        <p>&copy; 2024 HotelsBook Consultoria e Hospitalidade LTDA. Todos os direitos reservados.</p>
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <p>&copy; {{ 'now' | date('%Y') }} HotelsBook Consultoria e Hospitalidade LTDA. Todos os direitos reservados.</p>
+        <div class="flex gap-4 mt-4 md:mt-0">
+          <a href="#" class="hover:text-gray-300">Política de Privacidade</a>
+          <a href="#" class="hover:text-gray-300">Termos de Uso</a>
+        </div>
       </div>
     </div>
   </footer>

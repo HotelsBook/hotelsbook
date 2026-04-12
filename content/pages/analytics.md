@@ -1,51 +1,40 @@
 Title: HotelsBook Analytics
-Date: 2024-05-20
+Description: Plataforma de Revenue Management com inteligência de sazonalidade regional e benchmarking competitivo.
 Slug: analytics
 Save_as: analytics.html
 Status: published
 
-# HotelsBook Analytics
-## Inteligência de Revenue Management com foco regional
+<section class="max-w-4xl mx-auto px-4 py-16">
+  <h1 class="text-3xl md:text-4xl font-bold text-navy mb-4">HotelsBook Analytics</h1>
+  <p class="text-lg text-gray-600 mb-10 leading-relaxed">Inteligência de receita desenhada para hoteleiros que substituem intuição por dados. Nossa plataforma cruza ocupação histórica, sazonalidade local e concorrência para gerar recomendações tarifárias acionáveis.</p>
 
-Transforme dados em decisão. O HotelsBook Analytics é a primeira plataforma de Revenue Management desenvolvida com inteligência específica para o mercado hoteleiro do Nordeste, combinando tecnologia proprietária, sazonalidade local e benchmarking competitivo para maximizar sua receita sem complicação.
+  <div class="grid md:grid-cols-3 gap-6 mb-12">
+    <div class="p-6 bg-lightgray rounded-xl border border-gray-100">
+      <h3 class="font-bold text-navy mb-2">Sazonalidade Regional</h3>
+      <p class="text-sm text-gray-600">Calendário integrado com eventos do Cariri (ExpoCrato, romarias, concursos) e projeção de demanda.</p>
+    </div>
+    <div class="p-6 bg-lightgray rounded-xl border border-gray-100">
+      <h3 class="font-bold text-navy mb-2">Benchmarking em Tempo Real</h3>
+      <p class="text-sm text-gray-600">Posicione sua tarifa frente ao mercado local e identifique oportunidades de ajuste diário.</p>
+    </div>
+    <div class="p-6 bg-lightgray rounded-xl border border-gray-100">
+      <h3 class="font-bold text-navy mb-2">Relatórios Gerenciais</h3>
+      <p class="text-sm text-gray-600">Exportação de dados para reuniões com investidores, sócios e equipes operacionais.</p>
+    </div>
+  </div>
 
-### Para quem foi desenvolvido
+  <h2 class="text-2xl font-bold text-navy mb-4">Modelos de Acesso</h2>
+  <p class="text-gray-600 mb-6">Planos estruturados para diferentes estágios de maturidade digital, com pagamento via Pix e sem fidelidade contratual.</p>
+  
+  <ul class="space-y-3 text-gray-700 mb-10">
+    <li class="flex items-start"><span class="text-lightblue mr-2 mt-1">▸</span> Starter: métricas básicas e alertas de ocupação</li>
+    <li class="flex items-start"><span class="text-lightblue mr-2 mt-1">▸</span> Professional: motor de recomendação e comparativo competitivo</li>
+    <li class="flex items-start"><span class="text-lightblue mr-2 mt-1">▸</span> Business: consultoria estratégica e integrações via API</li>
+  </ul>
 
-- Proprietários de pousadas e hotéis boutique que desejam profissionalizar sua gestão tarifária
-- Redes regionais em expansão que precisam de padronização e visibilidade centralizada
-- Gestores hoteleiros que buscam reduzir a dependência de intuição e aumentar a previsibilidade financeira
-
-### Por que escolher o HotelsBook Analytics
-
-**Inteligência regional aplicada**
-Enquanto soluções genéricas tratam todo mercado como igual, nossa plataforma compreende as dinâmicas específicas do Cariri: ciclos da ExpoCrato, fluxos de romarias, períodos de concursos públicos e eventos corporativos locais. Você toma decisões baseadas no que realmente impacta seu negócio.
-
-**Simplicidade sem abrir mão da profundidade**
-Desenvolvemos uma interface intuitiva que entrega insights acionáveis sem exigir formação em ciência de dados. Relatórios claros, alertas estratégicos e recomendações práticas para ajuste de tarifas e ocupação.
-
-**Custo acessível para o hoteleiro brasileiro**
-Acreditamos que tecnologia de ponta não deve ser privilégio de grandes redes. Nossos planos foram estruturados para caber no orçamento de pequenos e médios empreendimentos, com pagamento facilitado via Pix e sem fidelidade abusiva.
-
-### Funcionalidades principais
-
-- Dashboard de sazonalidade regional com calendário de eventos locais e projeção de demanda
-- Comparativo competitivo em tempo real: posicione sua tarifa frente ao mercado local
-- Motor de recomendação de Revenue Management baseado em ocupação histórica e tendências
-- Relatórios gerenciais exportáveis para apresentação a investidores e parceiros
-- Suporte especializado com consultoria inclusa nos planos Professional e Business
-
-### Planos e investimento
-
-Oferecemos modelos flexíveis para diferentes estágios de maturidade digital:
-
-- Starter: ideal para quem está começando na gestão baseada em dados
-- Professional: para empreendimentos que buscam otimização contínua de receita
-- Business: solução completa com consultoria estratégica e integrações avançadas
-
-Valores a partir de R$ 49 mensais. Sem taxa de implantação. Cancelamento quando quiser.
-
-### Próximos passos
-
-Agende uma demonstração personalizada e veja, com dados do seu próprio mercado, como o HotelsBook Analytics pode elevar o desempenho do seu empreendimento.
-
-Entre em contato pelo formulário de parcerias ou envie uma mensagem para contato@hotelsbook.com.br. Nossa equipe retornará em até 48 horas úteis para alinhar sua necessidade à solução ideal.
+  <div class="bg-navy text-white p-8 rounded-xl text-center">
+    <h3 class="text-xl font-bold mb-3">Solicite uma demonstração</h3>
+    <p class="text-gray-300 mb-6">Nossa equipe apresenta um diagnóstico inicial gratuito com dados do seu mercado.</p>
+    <a href="{{ SITEURL }}/parcerias.html" class="btn-primary inline-block">Entrar em contato</a>
+  </div>
+</section>
