@@ -1,6 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
+# HotelsBook Configuration - Fixed
 AUTHOR = 'HotelsBook'
 SITENAME = 'HotelsBook Consultoria & Hospitalidade'
 SITEURL = ''
