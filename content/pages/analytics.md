@@ -28,7 +28,7 @@ Status: published
   <div class="grid md:grid-cols-2 gap-8 mb-12">
     <div class="p-6 bg-lightgray rounded-xl border border-gray-100">
       <h3 class="font-bold text-navy mb-3">Centralização sem Integrações Frágeis</h3>
-      <p class="text-sm text-gray-600">Faça upload de relatórios do seu PMS (Xenios, Carsoft, etc.) em PDF, Excel ou CSV. Nosso motor com IA identifica o layout, extrai transações e normaliza os dados automaticamente — sem necessidade de APIs complexas ou suporte técnico do fornecedor.</p>
+      <p class="text-sm text-gray-600">Faça upload de relatórios do seu PMS (Desbravador, Xenios, entre outros.) em PDF, Excel ou CSV. Nosso motor com IA identifica o layout, extrai transações e normaliza os dados automaticamente — sem necessidade de APIs complexas ou suporte técnico do fornecedor.</p>
     </div>
     <div class="p-6 bg-lightgray rounded-xl border border-gray-100">
       <h3 class="font-bold text-navy mb-3">Previsão Contextualizada</h3>
@@ -109,7 +109,7 @@ Status: published
         <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
       </summary>
       <div class="text-gray-600 mt-3 text-sm leading-relaxed">
-        <p><strong>Não é necessário.</strong> O HotelsBook Analytics foi desenvolvido para trabalhar de forma complementar ao seu PMS atual. Nosso parser adaptativo processa relatórios exportados em PDF, Excel ou CSV dos principais sistemas do mercado (Xenios, Carsoft, Clock, entre outros). Você mantém seu investimento tecnológico existente enquanto ganha inteligência estratégica avançada.</p>
+        <p><strong>Não é necessário.</strong> O HotelsBook Analytics foi desenvolvido para trabalhar de forma complementar ao seu PMS atual. Nosso parser adaptativo processa relatórios exportados em PDF, Excel ou CSV dos principais sistemas do mercado (Desbravador, Xenios, entre outros). Você mantém seu investimento tecnológico existente enquanto ganha inteligência estratégica avançada.</p>
       </div>
     </details>
     
