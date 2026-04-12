@@ -6,12 +6,6 @@
   <title>{% if page and page.title %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}</title>
   <meta name="description" content="{% if page and page.description %}{{ page.description }}{% else %}Consultoria hoteleira e concierge corporativo com inteligência de dados e suporte especializado.{% endif %}">
   
-  <!-- Open Graph / SEO Básico -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ SITEURL }}">
-  <meta property="og:title" content="{% if page and page.title %}{{ page.title }}{% else %}{{ SITENAME }}{% endif %}">
-  <meta property="og:description" content="{% if page and page.description %}{{ page.description }}{% else %}Consultoria hoteleira e concierge corporativo com inteligência de dados.{% endif %}">
-  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -25,38 +19,35 @@
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-            heading: ['Inter', 'system-ui', 'sans-serif'],
           }
         }
       }
     }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
-    .nav-link { @apply hover:text-lightblue transition-colors duration-200; }
-    .btn-primary { @apply bg-lightblue hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md; }
-    .btn-outline { @apply border-2 border-navy text-navy hover:bg-navy hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-200; }
-  </style>
 </head>
-<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+<body class="bg-white text-gray-800 flex flex-col min-h-screen font-sans">
+  
+  <!-- Navegação -->
   <nav class="bg-white/95 backdrop-blur border-b border-gray-100 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <a href="{{ SITEURL }}/" class="text-xl font-bold text-navy tracking-tight hover:text-lightblue transition">HotelsBook</a>
         <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
           {% for title, link in MENUITEMS %}
-            <a href="{{ SITEURL }}{{ link }}" class="nav-link">{{ title }}</a>
+            <a href="{{ SITEURL }}{{ link }}" class="hover:text-lightblue transition-colors duration-200">{{ title }}</a>
           {% endfor %}
         </div>
       </div>
     </div>
   </nav>
 
+  <!-- Conteúdo Principal -->
   <main class="flex-grow">
     {% block content %}{% endblock %}
   </main>
 
+  <!-- Rodapé -->
   <footer class="bg-navy text-white mt-auto">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
@@ -82,10 +73,10 @@
         </div>
       </div>
       <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-        <p>&copy; {{ 'now' | date('%Y') }} HotelsBook Consultoria e Hospitalidade LTDA. Todos os direitos reservados.</p>
+        <p>&copy; 2026 HotelsBook Consultoria e Hospitalidade LTDA. Todos os direitos reservados.</p>
         <div class="flex gap-4 mt-4 md:mt-0">
-          <a href="#" class="hover:text-gray-300">Política de Privacidade</a>
-          <a href="#" class="hover:text-gray-300">Termos de Uso</a>
+          <span>Política de Privacidade</span>
+          <span>Termos de Uso</span>
         </div>
       </div>
     </div>
