@@ -1,7 +1,7 @@
 # HotelsBook Configuration - Fixed
 AUTHOR = 'HotelsBook'
 SITENAME = 'HotelsBook Consultoria & Hospitalidade'
-SITEURL = ''
+SITEURL = 'https://hotelsbook.github.io/hotelsbook'
 
 PATH = 'content'
 OUTPUT_PATH = 'output'
