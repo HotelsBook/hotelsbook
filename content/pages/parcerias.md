@@ -27,7 +27,8 @@ Status: published
     <div class="p-6 border border-gray-200 rounded-xl hover:border-lightblue transition bg-white">
       <h3 class="font-bold text-navy mb-2">Para Hotéis e Redes Hoteleiras</h3>
       <p class="text-gray-600 text-sm mb-4">Consultoria estratégica em Revenue Management, diagnóstico operacional personalizado ou demonstração da plataforma HotelsBook Analytics.</p>
-      <a href="https://wa.me/5585984052096?text=Olá,%20sou%20hoteleiro%20e%20gostaria%20de%20agendar%20um%20diagnóstico%20gratuito%20da%20minha%20operação." target="_blank" rel="noopener noreferrer" class="text-lightblue font-medium text-sm hover:underline inline-flex items-center" aria-label="Iniciar conversa no WhatsApp para hoteleiros">
+      <!-- Link com contraste corrigido: navy sobre branco + ícone de seta -->
+      <a href="https://wa.me/5585984052096?text=Olá,%20sou%20hoteleiro%20e%20gostaria%20de%20agendar%20um%20diagnóstico%20gratuito%20da%20minha%20operação." target="_blank" rel="noopener noreferrer" class="text-navy font-semibold hover:text-lightblue transition text-sm inline-flex items-center" aria-label="Iniciar conversa no WhatsApp para hoteleiros">
         WhatsApp Comercial (B2B)
         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
       </a>
@@ -36,7 +37,8 @@ Status: published
     <div class="p-6 border border-gray-200 rounded-xl hover:border-lightblue transition bg-white">
       <h3 class="font-bold text-navy mb-2">Para Empresas e Instituições de Ensino</h3>
       <p class="text-gray-600 text-sm mb-4">Agenciamento de reservas corporativas, gestão de viagens para colaboradores ou estudantes, e parcerias institucionais com relatórios analíticos.</p>
-      <a href="mailto:parcerias@hotelsbook.com.br?subject=Proposta%20de%20Parceria%20Corporativa" class="text-lightblue font-medium text-sm hover:underline inline-flex items-center" aria-label="Enviar e-mail para parcerias corporativas">
+      <!-- Link com contraste corrigido: navy sobre branco + ícone de envelope -->
+      <a href="mailto:parcerias@hotelsbook.com.br?subject=Proposta%20de%20Parceria%20Corporativa" class="text-navy font-semibold hover:text-lightblue transition text-sm inline-flex items-center" aria-label="Enviar e-mail para parcerias corporativas">
         parcerias@hotelsbook.com.br
         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
       </a>
@@ -45,7 +47,8 @@ Status: published
     <div class="p-6 border border-gray-200 rounded-xl hover:border-lightblue transition bg-white">
       <h3 class="font-bold text-navy mb-2">Imprensa e Suporte</h3>
       <p class="text-gray-600 text-sm mb-4">Solicitações de entrevista, material para imprensa, dúvidas sobre planos ou suporte técnico para clientes ativos.</p>
-      <a href="mailto:contato@hotelsbook.com.br?subject=Contato%20Institucional" class="text-lightblue font-medium text-sm hover:underline inline-flex items-center" aria-label="Enviar e-mail para contato geral">
+      <!-- Link com contraste corrigido: navy sobre branco + ícone de envelope -->
+      <a href="mailto:contato@hotelsbook.com.br?subject=Contato%20Institucional" class="text-navy font-semibold hover:text-lightblue transition text-sm inline-flex items-center" aria-label="Enviar e-mail para contato geral">
         contato@hotelsbook.com.br
         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
       </a>
@@ -55,7 +58,8 @@ Status: published
   <div class="bg-navy text-white p-8 rounded-xl text-center">
     <h3 class="text-xl font-bold mb-3">Transforme sua operação hoteleira com dados e expertise</h3>
     <p class="text-gray-300 mb-6">Nossa equipe de especialistas retorna em até 24 horas úteis com uma proposta personalizada, sem compromisso.</p>
-    <a href="https://wa.me/5585984052096?text=Olá,%20gostaria%20de%20agendar%20uma%20conversa%20estratégica%20com%20a%20equipe%20HotelsBook." target="_blank" rel="noopener noreferrer" class="bg-lightblue hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg transition inline-block" aria-label="Iniciar conversa estratégica no WhatsApp">
+    <!-- Botão CTA com contraste corrigido: fundo branco + texto navy sobre fundo navy -->
+    <a href="https://wa.me/5585984052096?text=Olá,%20gostaria%20de%20agendar%20uma%20conversa%20estratégica%20com%20a%20equipe%20HotelsBook." target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-gray-100 text-navy font-semibold py-3 px-8 rounded-lg transition inline-block shadow-lg" aria-label="Iniciar conversa estratégica no WhatsApp">
       Agendar conversa estratégica
     </a>
   </div>

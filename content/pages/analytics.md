@@ -83,37 +83,92 @@ Status: published
   <div class="bg-navy text-white p-8 rounded-xl text-center">
     <h3 class="text-xl font-bold mb-3">Teste a plataforma sem compromisso</h3>
     <p class="text-gray-300 mb-6">14 dias de acesso completo. Sem cartão de crédito, sem integração complexa. Suba um relatório do seu PMS e veja insights acionáveis em minutos.</p>
-    <a href="/parcerias.html" class="bg-lightblue hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg transition inline-block">Solicitar Acesso de Teste</a>
+    <a href="/parcerias.html" class="bg-white hover:bg-gray-100 text-navy font-semibold py-3 px-8 rounded-lg transition inline-block shadow-lg">Solicitar Acesso de Teste</a>
     <p class="text-gray-400 text-xs mt-4">Cancelamento a qualquer momento. Sem fidelidade.</p>
   </div>
 </section>
 
-<!-- FAQ Opcional para SEO e Redução de Objeções -->
+<!-- FAQ Profissional para SEO e Redução de Objeções -->
 <section class="max-w-4xl mx-auto px-4 py-12 border-t border-gray-200">
-  <h2 class="text-2xl font-bold text-navy mb-6 text-center">Perguntas Frequentes</h2>
+  <h2 class="text-2xl font-bold text-navy mb-8 text-center">Dúvidas Frequentes</h2>
   <div class="space-y-4">
-    <details class="group p-4 bg-gray-50 rounded-lg">
-      <summary class="font-medium text-navy cursor-pointer list-none flex justify-between items-center">
-        Meus dados estão seguros na plataforma?
-        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    
+    <details class="group p-5 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+      <summary class="font-semibold text-navy cursor-pointer list-none flex justify-between items-center text-base">
+        Quanto tempo leva para implementar e começar a ver resultados?
+        <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
       </summary>
-      <p class="text-gray-600 text-sm mt-3">Sim. Utilizamos criptografia de ponta a ponta, conformidade LGPD nativa e arquitetura de privacidade por design. Seus dados nunca são usados para treinar modelos públicos ou compartilhados com terceiros.</p>
+      <div class="text-gray-600 mt-3 text-sm leading-relaxed">
+        <p>A implementação é imediata: após o cadastro, você já pode fazer upload dos primeiros relatórios. Nossos clientes relatam que em <strong>7 a 14 dias</strong> já identificam oportunidades concretas de aumento de receita. A curva de aprendizado é rápida devido à interface intuitiva e ao suporte especializado que oferecemos durante todo o processo de onboarding.</p>
+      </div>
     </details>
     
-    <details class="group p-4 bg-gray-50 rounded-lg">
-      <summary class="font-medium text-navy cursor-pointer list-none flex justify-between items-center">
-        Preciso de conhecimento técnico para usar?
-        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    <details class="group p-5 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+      <summary class="font-semibold text-navy cursor-pointer list-none flex justify-between items-center text-base">
+        Preciso substituir meu sistema de gestão (PMS) atual?
+        <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
       </summary>
-      <p class="text-gray-600 text-sm mt-3">Não. A plataforma foi desenhada para hoteleiros, não para cientistas de dados. Interface intuitiva, relatórios em linguagem natural e suporte especializado garantem adoção rápida pela sua equipe.</p>
+      <div class="text-gray-600 mt-3 text-sm leading-relaxed">
+        <p><strong>Não é necessário.</strong> O HotelsBook Analytics foi desenvolvido para trabalhar de forma complementar ao seu PMS atual. Nosso parser adaptativo processa relatórios exportados em PDF, Excel ou CSV dos principais sistemas do mercado (Xenios, Carsoft, Clock, entre outros). Você mantém seu investimento tecnológico existente enquanto ganha inteligência estratégica avançada.</p>
+      </div>
     </details>
     
-    <details class="group p-4 bg-gray-50 rounded-lg">
-      <summary class="font-medium text-navy cursor-pointer list-none flex justify-between items-center">
-        E se meu PMS não estiver na lista de compatíveis?
-        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    <details class="group p-5 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+      <summary class="font-semibold text-navy cursor-pointer list-none flex justify-between items-center text-base">
+        Qual é o investimento mensal e existe fidelidade contratual?
+        <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
       </summary>
-      <p class="text-gray-600 text-sm mt-3">Sem problema. Nosso parser adaptativo com IA processa relatórios em PDF, Excel ou CSV de qualquer sistema. Se você consegue exportar dados do seu PMS, conseguimos processá-los.</p>
+      <div class="text-gray-600 mt-3 text-sm leading-relaxed">
+        <p>Oferecemos planos escalonados de acordo com o porte da operação, <strong>a partir de R$ 49/mês</strong> para pousadas e hotéis de pequeno porte. Não trabalhamos com fidelidade contratual: você pode cancelar quando desejar, sem multas ou burocracia. Acreditamos que a qualidade do nosso serviço deve ser o motivo da sua permanência, não cláusulas contratuais.</p>
+      </div>
     </details>
+    
+    <details class="group p-5 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+      <summary class="font-semibold text-navy cursor-pointer list-none flex justify-between items-center text-base">
+        Como funciona o suporte técnico e o treinamento da equipe?
+        <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+      </summary>
+      <div class="text-gray-600 mt-3 text-sm leading-relaxed">
+        <p>Todos os planos incluem <strong>suporte especializado via e-mail e WhatsApp</strong> em horário comercial. Realizamos uma sessão de onboarding guiado para configurar sua conta e treinar sua equipe nas funcionalidades essenciais. Materiais de apoio, tutoriais em vídeo e documentação técnica estão disponíveis 24/7. Para planos empresariais, oferecemos treinamento personalizado e gerente de conta dedicado.</p>
+      </div>
+    </details>
+    
+    <details class="group p-5 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+      <summary class="font-semibold text-navy cursor-pointer list-none flex justify-between items-center text-base">
+        Meus dados e informações estratégicas estão seguros na plataforma?
+        <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+      </summary>
+      <div class="text-gray-600 mt-3 text-sm leading-relaxed">
+        <p><strong>Absolutamente.</strong> Utilizamos criptografia de ponta a ponta (TLS 1.3 em trânsito e AES-256 em repouso), infraestrutura em nuvem com certificação ISO 27001 e conformidade total com a LGPD. Seus dados são armazenados em ambiente isolado e nunca são utilizados para treinar modelos de IA públicos ou compartilhados com terceiros. Você mantém propriedade intelectual total sobre todas as suas informações.</p>
+      </div>
+    </details>
+    
+    <details class="group p-5 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+      <summary class="font-semibold text-navy cursor-pointer list-none flex justify-between items-center text-base">
+        Posso fazer upgrade ou downgrade do plano conforme minha necessidade?
+        <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+      </summary>
+      <div class="text-gray-600 mt-3 text-sm leading-relaxed">
+        <p>Sim, oferecemos <strong>flexibilidade total</strong>. Você pode fazer upgrade para acessar funcionalidades avançadas ou downgrade para reduzir custos quando necessário. A alteração é processada de forma proporcional, e você só paga pelo período efetivamente utilizado em cada modalidade. Entre em contato com nosso time comercial para avaliar a melhor opção para seu momento de negócio.</p>
+      </div>
+    </details>
+    
+    <details class="group p-5 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+      <summary class="font-semibold text-navy cursor-pointer list-none flex justify-between items-center text-base">
+        E se eu não ficar satisfeito com os resultados?
+        <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+      </summary>
+      <div class="text-gray-600 mt-3 text-sm leading-relaxed">
+        <p>Oferecemos <strong>14 dias de teste gratuito</strong> sem compromisso e sem solicitação de cartão de crédito. Durante este período, você tem acesso completo a todas as funcionalidades do plano escolhido. Se a plataforma não atender às suas expectativas, o cancelamento é simples e imediato, sem questionamentos. Nossa taxa de retenção supera 85% porque confiamos no valor que entregamos, mas respeitamos totalmente sua liberdade de escolha.</p>
+      </div>
+    </details>
+    
+  </div>
+  
+  <div class="text-center mt-8">
+    <p class="text-gray-600 text-sm">
+      Não encontrou a resposta que procurava? 
+      <a href="/parcerias.html" class="text-lightblue font-semibold hover:underline">Fale diretamente com nossa equipe comercial</a>
+    </p>
   </div>
 </section>

@@ -9,8 +9,10 @@ Status: published
     <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Inteligência e consultoria estratégica para a hotelaria brasileira</h1>
     <p class="text-xl text-blue-100 mb-10">Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar receitas e escalar negócios com previsibilidade e controle.</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/parcerias.html" class="bg-lightblue hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-300 shadow-lg">Agendar Consultoria</a>
-      <a href="/analytics.html" class="border-2 border-white hover:bg-white hover:text-navy font-semibold py-4 px-8 rounded-lg transition duration-300">Conhecer o Analytics</a>
+      <!-- Botão Primário: Fundo branco + texto navy para alto contraste sobre fundo navy -->
+      <a href="/parcerias.html" class="bg-white hover:bg-gray-100 text-navy font-semibold py-4 px-8 rounded-lg transition duration-300 shadow-lg">Agendar Consultoria</a>
+      <!-- Botão Secundário: Borda branca + hover sólido para hierarquia visual clara -->
+      <a href="/analytics.html" class="border-2 border-white text-white hover:bg-white hover:text-navy font-semibold py-4 px-8 rounded-lg transition duration-300">Conhecer o Analytics</a>
     </div>
   </div>
 </section>
@@ -23,7 +25,10 @@ Status: published
       </div>
       <h3 class="text-xl font-bold text-navy mb-3">Consultoria Estratégica</h3>
       <p class="text-gray-600 mb-4 text-sm leading-relaxed">Diagnóstico operacional, precificação inteligente e planejamento tático para hotéis e pousadas. Atendimento presencial ou remoto, com foco em resultados mensuráveis e ROI comprovado.</p>
-      <a href="/parcerias.html" class="text-lightblue font-medium text-sm hover:underline">Solicitar diagnóstico gratuito</a>
+      <a href="/parcerias.html" class="text-navy font-semibold hover:text-lightblue transition text-sm inline-flex items-center">
+        Solicitar diagnóstico gratuito
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
     </div>
     
     <div class="p-8 border border-gray-200 rounded-xl hover:shadow-lg transition duration-300 bg-white">
@@ -32,7 +37,10 @@ Status: published
       </div>
       <h3 class="text-xl font-bold text-navy mb-3">HotelsBook Analytics</h3>
       <p class="text-gray-600 mb-4 text-sm leading-relaxed">Plataforma de Revenue Management com parser adaptativo, IA generativa e previsão de sazonalidade. Conecte relatórios do seu PMS e obtenha insights acionáveis em minutos.</p>
-      <a href="/analytics.html" class="text-lightblue font-medium text-sm hover:underline">Ver funcionalidades completas</a>
+      <a href="/analytics.html" class="text-navy font-semibold hover:text-lightblue transition text-sm inline-flex items-center">
+        Ver funcionalidades completas
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
     </div>
 
     <div class="p-8 border border-gray-200 rounded-xl hover:shadow-lg transition duration-300 bg-white">
@@ -41,7 +49,10 @@ Status: published
       </div>
       <h3 class="text-xl font-bold text-navy mb-3">Agência de Reservas</h3>
       <p class="text-gray-600 mb-4 text-sm leading-relaxed">Gestão completa de hospedagem para empresas e instituições de ensino. Negociação direta com rede hoteleira, controle de políticas de viagem e relatórios analíticos de gastos.</p>
-      <a href="/parcerias.html" class="text-lightblue font-medium text-sm hover:underline">Propor parceria corporativa</a>
+      <a href="/parcerias.html" class="text-navy font-semibold hover:text-lightblue transition text-sm inline-flex items-center">
+        Propor parceria corporativa
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
     </div>
   </div>
 </section>
@@ -69,5 +80,6 @@ Status: published
 <section class="max-w-4xl mx-auto px-4 py-16 text-center">
   <h2 class="text-2xl font-bold text-navy mb-4">Pronto para transformar sua operação hoteleira?</h2>
   <p class="text-gray-600 mb-8">Nossa equipe especializada retorna em até 24 horas úteis com uma proposta alinhada ao seu momento de negócio.</p>
-  <a href="/parcerias.html" class="bg-navy hover:bg-blue-900 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-block">Falar com um especialista</a>
+  <!-- Botão CTA Final: Navy com texto branco (alto contraste já corrigido) -->
+  <a href="/parcerias.html" class="bg-navy hover:bg-blue-900 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-block shadow-md">Falar com um especialista</a>
 </section>

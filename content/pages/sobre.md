@@ -76,6 +76,10 @@ Status: published
   <div class="bg-navy text-white p-8 rounded-xl text-center">
     <h3 class="text-xl font-bold mb-3">Conheça nossa história de perto</h3>
     <p class="text-gray-300 mb-6">Agende uma conversa com nossa equipe e descubra como podemos transformar sua operação hoteleira.</p>
-    <a href="/parcerias.html" class="bg-lightblue hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg transition inline-block">Falar com um especialista</a>
+    <!-- Botão CTA com contraste corrigido: fundo branco + texto navy + sombra para destaque -->
+    <a href="/parcerias.html" class="bg-white hover:bg-gray-100 text-navy font-semibold py-3 px-8 rounded-lg transition inline-block shadow-lg inline-flex items-center">
+      Falar com um especialista
+      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    </a>
   </div>
 </section>
