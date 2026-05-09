@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - HotelsBook | Consultoria e Tecnologia para Hotelaria</title>
+  <meta name="description" content="Entre em contato com a HotelsBook. Consultoria estratégica, Analytics e gestão de viagens corporativas. Atendimento nacional via email e WhatsApp.">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            lightblue: '#3b82f6',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    html { scroll-behavior: smooth; }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+    }
+    .info-card { transition: all 0.3s ease; }
+    .info-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(10, 22, 40, 0.1); }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-bold text-navy">HotelsBook</a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html#produtos" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Produtos</a>
+          <a href="index.html#servicos" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Serviços</a>
+          <a href="index.html#sobre" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Sobre</a>
+          <a href="index.html#carreiras" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Carreiras</a>
+          <a href="contato.html" class="bg-navy text-white px-6 py-2 rounded-lg hover:bg-blue-900 transition-all duration-300 font-medium">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-navy via-blue-900 to-lightblue text-white py-28 px-4 overflow-hidden">
+    <div class="absolute inset-0 opacity-15">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1632&q=80" alt="Contato profissional" class="w-full h-full object-cover">
+    </div>
+    <div class="relative max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Vamos conversar sobre seu projeto</h1>
+      <p class="text-xl text-blue-100 max-w-2xl mx-auto">Nossa equipe comercial e técnica está pronta para entender sua demanda e apresentar a melhor solução para sua operação hoteleira ou corporativa.</p>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-5 gap-12">
+        
+        <!-- Left: Contact Info -->
+        <div class="lg:col-span-2 space-y-8" data-aos="fade-right">
+          <div>
+            <h2 class="text-2xl font-bold text-navy mb-6">Canais de Atendimento</h2>
+            <p class="text-gray-600 mb-8">Selecione o canal mais adequado ao seu perfil. Respondemos em até 24 horas úteis.</p>
+          </div>
+
+          <!-- Email -->
+          <div class="info-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy mb-1">E-mail Comercial</h3>
+                <a href="mailto:comercial@hotelsbook.com.br" class="text-lightblue hover:underline">comercial@hotelsbook.com.br</a>
+                <p class="text-gray-500 text-sm mt-1">Propostas, parcerias e consultoria B2B</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp B2B -->
+          <div class="info-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.59 2 2.17 6.42 2.17 11.87c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.45 0 9.87-4.42 9.87-9.87 0-5.45-4.42-9.87-9.87-9.87zm.01 18.03c-1.5 0-2.98-.4-4.27-1.15l-.31-.18-3.11.82.83-3.04-.2-.32c-.83-1.33-1.27-2.87-1.27-4.45 0-4.64 3.78-8.42 8.42-8.42 4.64 0 8.42 3.78 8.42 8.42 0 4.64-3.78 8.42-8.42 8.42zm4.58-6.24c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.1-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.89.87-.89 2.13 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.88.61.26 1.09.42 1.46.54.62.2 1.18.17 1.62.11.49-.07 1.48-.61 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy mb-1">WhatsApp Corporativo (B2B)</h3>
+                <a href="https://wa.me/5588921546413" target="_blank" rel="noopener noreferrer" class="text-lightblue hover:underline">(88) 92154-6413</a>
+                <p class="text-gray-500 text-sm mt-1">Hotéis, redes e empresas de consultoria</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp B2C -->
+          <div class="info-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.59 2 2.17 6.42 2.17 11.87c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.45 0 9.87-4.42 9.87-9.87 0-5.45-4.42-9.87-9.87-9.87zm.01 18.03c-1.5 0-2.98-.4-4.27-1.15l-.31-.18-3.11.82.83-3.04-.2-.32c-.83-1.33-1.27-2.87-1.27-4.45 0-4.64 3.78-8.42 8.42-8.42 4.64 0 8.42 3.78 8.42 8.42 0 4.64-3.78 8.42-8.42 8.42zm4.58-6.24c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.1-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.89.87-.89 2.13 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.88.61.26 1.09.42 1.46.54.62.2 1.18.17 1.62.11.49-.07 1.48-.61 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy mb-1">WhatsApp Reservas (B2C)</h3>
+                <a href="https://wa.me/5585984052096" target="_blank" rel="noopener noreferrer" class="text-lightblue hover:underline">(85) 98405-2096</a>
+                <p class="text-gray-500 text-sm mt-1">Hospped: viagens corporativas e acadêmicas</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="info-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy mb-1">Horário de Atendimento</h3>
+                <p class="text-gray-600">Segunda a Sexta: 08h às 18h</p>
+                <p class="text-gray-600">Sábado: 09h às 13h</p>
+                <p class="text-gray-500 text-sm mt-1">Fuso horário de Brasília (GMT-3)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="lg:col-span-3" data-aos="fade-left">
+          <div class="bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100">
+            <h2 class="text-2xl font-bold text-navy mb-2">Envie uma mensagem</h2>
+            <p class="text-gray-600 mb-8">Preencha o formulário abaixo e nossa equipe retornará com uma proposta ou esclarecimento técnico.</p>
+            
+            <form id="contact-form" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="nome" class="block text-sm font-medium text-gray-700 mb-2">Nome completo</label>
+                  <input type="text" id="nome" name="nome" required class="form-input" placeholder="Seu nome">
+                </div>
+                <div>
+                  <label for="empresa" class="block text-sm font-medium text-gray-700 mb-2">Empresa / Instituição</label>
+                  <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nome da organização">
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-mail corporativo</label>
+                  <input type="email" id="email" name="email" required class="form-input" placeholder="seu@empresa.com">
+                </div>
+                <div>
+                  <label for="telefone" class="block text-sm font-medium text-gray-700 mb-2">Telefone / WhatsApp</label>
+                  <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(XX) XXXXX-XXXX">
+                </div>
+              </div>
+
+              <div>
+                <label for="assunto" class="block text-sm font-medium text-gray-700 mb-2">Assunto</label>
+                <select id="assunto" name="assunto" required class="form-select">
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="consultoria">Consultoria Estratégica</option>
+                  <option value="analytics">HotelsBook Analytics</option>
+                  <option value="hospped">Hospped - Reservas Corporativas</option>
+                  <option value="conciergee">ConciergeE (Futuro)</option>
+                  <option value="parceria">Proposta de Parceria</option>
+                  <option value="carreira">Carreiras / RH</option>
+                  <option value="outro">Outro assunto</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required class="form-textarea" placeholder="Descreva brevemente sua necessidade ou dúvida..."></textarea>
+              </div>
+
+              <div class="flex items-start">
+                <input type="checkbox" id="lgpd" name="lgpd" required class="mt-1 mr-3 w-4 h-4 text-lightblue border-gray-300 rounded focus:ring-lightblue">
+                <label for="lgpd" class="text-sm text-gray-600">
+                  Concordo com a <a href="#" class="text-lightblue hover:underline">Política de Privacidade</a> e autorizo o tratamento dos meus dados para fins de contato comercial.
+                </label>
+              </div>
+
+              <button type="submit" class="btn-primary w-full py-4 text-base">
+                Enviar mensagem
+              </button>
+              
+              <p class="text-center text-xs text-gray-500 mt-4">
+                Seus dados estão protegidos e nunca serão compartilhados com terceiros.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Section -->
+  <section class="py-16 bg-white border-t border-gray-100">
+    <div class="max-w-5xl mx-auto px-4 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-navy mb-6">Atendimento em Todo o Brasil</h2>
+      <p class="text-gray-600 mb-10 max-w-3xl mx-auto">Atuamos de forma remota e presencial, com equipe distribuída estrategicamente para atender hotéis, redes e corporações em todas as regiões do país.</p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4">
+          <div class="text-3xl font-bold text-lightblue mb-1">Norte</div>
+          <div class="text-gray-500 text-sm">Atendimento remoto + visitas programadas</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl font-bold text-lightblue mb-1">Nordeste</div>
+          <div class="text-gray-500 text-sm">Base operacional e suporte regional</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl font-bold text-lightblue mb-1">Sudeste</div>
+          <div class="text-gray-500 text-sm">Parcerias estratégicas e eventos</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl font-bold text-lightblue mb-1">Sul / Centro-Oeste</div>
+          <div class="text-gray-500 text-sm">Consultoria técnica e implementação</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-blue-100 text-sm">&copy; <span class="current-year"></span> HotelsBook Tecnologia e Hospitalidade LTDA. Todos os direitos reservados.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-blue-100">
+          <a href="index.html" class="hover:text-white transition">Voltar ao início</a>
+          <a href="contato.html" class="hover:text-white transition font-medium text-white">Contato</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

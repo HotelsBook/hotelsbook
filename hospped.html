@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospped - Agência de Reservas Corporativas e Mobilidade Acadêmica</title>
+  <meta name="description" content="Gestão completa de viagens corporativas e acadêmicas. Negociação direta com rede hoteleira, controle de políticas e relatórios analíticos de gastos.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            lightblue: '#3b82f6',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .gradient-animate {
+      background: linear-gradient(-45deg, #0a1628, #1e3a8a, #3b82f6, #0a1628);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    details > summary {
+      list-style: none;
+    }
+    
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-bold text-navy">HotelsBook</a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html#produtos" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Produtos</a>
+          <a href="index.html#servicos" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Serviços</a>
+          <a href="index.html#sobre" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Sobre</a>
+          <a href="index.html#carreiras" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Carreiras</a>
+          <a href="index.html#contato" class="bg-navy text-white px-6 py-2 rounded-lg hover:bg-blue-900 transition-all duration-300 font-medium">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-navy via-blue-900 to-lightblue text-white py-32 px-4 overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1174&q=80" alt="Viagens corporativas" class="w-full h-full object-cover">
+    </div>
+    <div class="relative max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Hospped</h1>
+      <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">Agência de reservas especializada em viagens corporativas e mobilidade acadêmica. Gestão completa de hospedagem com negociação direta, controle de políticas e relatórios analíticos de gastos.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contato" class="bg-white text-navy hover:bg-blue-50 font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg">Solicitar Proposta</a>
+        <a href="#servicos" class="border-2 border-white text-white hover:bg-white hover:text-navy font-bold py-4 px-8 rounded-full transition-all duration-300">Conhecer Serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços Principais -->
+  <section id="servicos" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Soluções Completas em Gestão de Viagens</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+        <p class="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">Oferecemos atendimento especializado tanto para empresas quanto para instituições de ensino</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Viagens Corporativas -->
+        <div class="p-8 bg-white rounded-2xl shadow-lg card-hover">
+          <div class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-navy mb-4">Viagens Corporativas</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">Gestão completa de hospedagem para empresas de todos os portes. Negociamos diretamente com a rede hoteleira para garantir as melhores tarifas e condições de pagamento.</p>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-600">Negociação direta com hotéis para tarifas corporativas exclusivas</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-600">Controle e aplicação de políticas de viagem da empresa</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-600">Relatórios analíticos de gastos por departamento, projeto ou colaborador</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-600">Atendimento 24/7 para emergências e mudanças de última hora</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Mobilidade Acadêmica -->
+        <div class="p-8 bg-white rounded-2xl shadow-lg card-hover">
+          <div class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-navy mb-4">Mobilidade Acadêmica</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">Soluções especializadas para instituições de ensino, universidades e centros de pesquisa. Gestão de hospedagem para estudantes, professores e pesquisadores em mobilidade.</p>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-600">Reservas para intercâmbio, estágios e programas de pesquisa</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-600">Parcerias com hotéis próximos a campi e centros acadêmicos</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-600">Tarifas especiais para longas permanências</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-600">Suporte personalizado para grupos e eventos acadêmicos</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Por que Escolher a Hospped?</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-navy to-lightblue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-lg mb-2">Economia Real</h3>
+          <p class="text-gray-600 text-sm">Redução de até 30% nos custos com hospedagem através de negociação direta e tarifas corporativas exclusivas.</p>
+        </div>
+        
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-navy to-lightblue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-lg mb-2">Controle Total</h3>
+          <p class="text-gray-600 text-sm">Plataforma de gestão com relatórios detalhados, controle de políticas e centralização de todas as reservas.</p>
+        </div>
+        
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-navy to-lightblue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-lg mb-2">Suporte Especializado</h3>
+          <p class="text-gray-600 text-sm">Equipe treinada para atender demandas corporativas e acadêmicas com agilidade e profissionalismo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Como Funciona</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+          <h4 class="font-bold text-navy mb-2">Diagnóstico</h4>
+          <p class="text-gray-600 text-sm">Analisamos seu volume de viagens, destinos frequentes e necessidades específicas.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+          <h4 class="font-bold text-navy mb-2">Negociação</h4>
+          <p class="text-gray-600 text-sm">Negociamos tarifas exclusivas com hotéis estratégicos para sua operação.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+          <h4 class="font-bold text-navy mb-2">Implementação</h4>
+          <p class="text-gray-600 text-sm">Configuramos sua conta, treinamos sua equipe e integramos processos.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+          <h4 class="font-bold text-navy mb-2">Gestão Contínua</h4>
+          <p class="text-gray-600 text-sm">Acompanhamento constante, relatórios periódicos e otimização contínua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para Quem É -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Para Quem é a Hospped?</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-8 bg-gray-50 rounded-2xl card-hover">
+          <h3 class="text-xl font-bold text-navy mb-4">Empresas de Todos os Portes</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Startups e PMEs com viagens frequentes</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Grandes corporações com políticas de viagem complexas</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Consultorias e empresas de serviços com equipes em campo</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="p-8 bg-gray-50 rounded-2xl card-hover">
+          <h3 class="text-xl font-bold text-navy mb-4">Instituições de Ensino</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Universidades com programas de intercâmbio</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Centros de pesquisa com mobilidade acadêmica</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-lightblue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Escolas de idiomas e organizações educacionais</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contato" class="py-20 bg-gradient-to-r from-navy to-blue-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Solicite uma Proposta Personalizada</h2>
+      <p class="text-xl text-blue-100 mb-8">Entre em contato conosco e descubra como podemos reduzir seus custos com hospedagem enquanto melhoramos a experiência de viagem da sua equipe.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <a href="https://wa.me/5585984052096" target="_blank" class="inline-block bg-white text-navy hover:bg-blue-50 font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg">
+          WhatsApp B2C: (85) 98405-2096
+        </a>
+        <a href="https://wa.me/5588921546413" target="_blank" class="inline-block border-2 border-white text-white hover:bg-white hover:text-navy font-bold py-4 px-8 rounded-full transition-all duration-300">
+          WhatsApp B2B: (88) 92154-6413
+        </a>
+      </div>
+      <p class="text-gray-400 text-sm">Ou envie um email para: reservas@hotelsbook.com.br</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Dúvidas Frequentes</h2>
+      
+      <div class="space-y-4">
+        <details class="group p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center text-lg">
+            Qual é o custo do serviço da Hospped?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>Nosso modelo de remuneração é baseado em comissões negociadas diretamente com a rede hoteleira, o que significa que <strong>você não paga nada a mais</strong> pelas reservas. Na verdade, economiza em média 20-30% comparado às tarifas públicas. Para projetos especiais ou consultorias personalizadas, elaboramos propostas sob medida.</p>
+          </div>
+        </details>
+        
+        <details class="group p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center text-lg">
+            Como funciona o processo de reserva?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>Oferecemos múltiplos canais de atendimento: <strong>WhatsApp, e-mail, telefone ou plataforma online</strong>. Sua equipe solicita a reserva informando destino, datas e preferências. Nossa equipe localiza as melhores opções dentro da política da empresa e confirma em até 2 horas úteis. Para reservas recorrentes, podemos automatizar o processo.</p>
+          </div>
+        </details>
+        
+        <details class="group p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center text-lg">
+            É possível integrar com nosso sistema de gestão atual?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>Sim! Trabalhamos com <strong>integrações via API</strong> com os principais sistemas de gestão empresarial (ERP) e plataformas de RH. Também oferecemos relatórios em formatos compatíveis (Excel, CSV, PDF) que podem ser facilmente importados para seu sistema. Nossa equipe técnica avalia suas necessidades e propõe a melhor solução de integração.</p>
+          </div>
+        </details>
+        
+        <details class="group p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center text-lg">
+            Vocês atendem viagens internacionais?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>Sim, atuamos com <strong>reservas nacionais e internacionais</strong>. Para destinos no exterior, trabalhamos com redes hoteleiras globais e operadores locais para garantir as melhores condições. Oferecemos suporte em português durante todo o processo e auxiliamos com questões específicas de cada destino (visto, vacinas, documentação).</p>
+          </div>
+        </details>
+        
+        <details class="group p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center text-lg">
+            Qual o prazo médio para implementação do serviço?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>O processo de implementação leva em média <strong>7 a 15 dias úteis</strong>, dependendo do porte da organização e complexidade das necessidades. Incluímos: diagnóstico inicial, negociação com hotéis estratégicos, configuração de conta, treinamento da equipe e período de acompanhamento. Para demandas urgentes, oferecemos implementação acelerada em até 48 horas.</p>
+          </div>
+        </details>
+        
+        <details class="group p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center text-lg">
+            Como é feito o pagamento das reservas?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>Oferecemos <strong>múltiplas formas de pagamento</strong> para atender diferentes políticas empresariais: cartão corporativo, faturamento direto (boleto para empresas com bom histórico), pagamento no hotel ou combinação de modalidades. Negociamos condições especiais de pagamento com a rede hoteleira, incluindo possibilidade de parcelamento sem juros.</p>
+          </div>
+        </details>
+      </div>
+      
+      <div class="text-center mt-12">
+        <p class="text-gray-600">
+          Ainda tem dúvidas? 
+          <a href="index.html#contato" class="text-lightblue font-semibold hover:underline">Fale diretamente com nossa equipe</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-blue-100 text-sm">&copy; 2026 HotelsBook Tecnologia e Hospitalidade LTDA. Todos os direitos reservados.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-blue-100">
+          <a href="index.html" class="hover:text-white transition">Voltar ao início</a>
+          <a href="index.html#contato" class="hover:text-white transition">Contato</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+    
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-md');
+      } else {
+        navbar.classList.remove('shadow-md');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parceiros - HotelsBook | Ecossistema de Tecnologia e Hospitalidade</title>
+  <meta name="description" content="Faça parte do ecossistema HotelsBook. Sejam revendedores de Analytics, hotéis parceiros na Hospped ou integradores de tecnologia.">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            lightblue: '#3b82f6',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    html { scroll-behavior: smooth; }
+    .partner-card { transition: all 0.3s ease; border: 1px solid transparent; }
+    .partner-card:hover { border-color: #3b82f6; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15); }
+    .check-icon { flex-shrink: 0; }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-bold text-navy">HotelsBook</a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html#produtos" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Produtos</a>
+          <a href="index.html#servicos" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Serviços</a>
+          <a href="index.html#sobre" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Sobre</a>
+          <a href="contato.html" class="bg-navy text-white px-6 py-2 rounded-lg hover:bg-blue-900 transition-all duration-300 font-medium">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-navy via-blue-900 to-lightblue text-white py-32 px-4 overflow-hidden">
+    <div class="absolute inset-0 opacity-15">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1169&q=80" alt="Parceria estratégica" class="w-full h-full object-cover">
+    </div>
+    <div class="relative max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <span class="bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-2 rounded-full text-sm font-medium inline-block mb-6">
+        Programa de Parcerias
+      </span>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Faça parte do ecossistema<br>HotelsBook</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-10">Conectamos tecnologia, dados e hospitalidade. Seja um parceiro de tecnologia, revenda nossas soluções ou integre sua operação à nossa rede.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#formulario" class="bg-white text-navy hover:bg-blue-50 font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg">
+          Propor Parceria
+        </a>
+        <a href="#modelos" class="border-2 border-white text-white hover:bg-white hover:text-navy font-bold py-4 px-8 rounded-full transition-all duration-300">
+          Ver Modelos de Negócio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Partner Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Por que ser um parceiro?</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+        <p class="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">Oferecemos suporte dedicado, tecnologia proprietária e modelos de comissão competitivos.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-lightblue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Receita Recorrente</h3>
+          <p class="text-gray-600">Modelos de revenda com comissões sobre a mensalidade do cliente enquanto ele for ativo na plataforma.</p>
+        </div>
+        
+        <div class="text-center p-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-lightblue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Tecnologia Validada</h3>
+          <p class="text-gray-600">Ferramentas proprietárias desenvolvidas para o mercado hoteleiro, com IA e análise de dados em tempo real.</p>
+        </div>
+        
+        <div class="text-center p-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-lightblue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Suporte Dedicado</h3>
+          <p class="text-gray-600">Canal exclusivo para parceiros, com materiais de venda, treinamento técnico e gerente de conta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership Models Section -->
+  <section id="modelos" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Modelos de Parceria</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+        <p class="text-xl text-gray-600 mt-6">Escolha a modalidade que melhor se adapta ao seu negócio.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Modelo 1: Canais/Revenda -->
+        <div class="partner-card bg-white p-8 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-navy mb-4">Revendedor de Tecnologia</h3>
+          <p class="text-gray-600 mb-6">Ideal para consultores hoteleiros e agências que desejam revender a plataforma Analytics e ganhar recorrência.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Comissão recorrente sobre a mensalidade</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Treinamento completo de equipe</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Material de vendas white-label</span>
+            </li>
+          </ul>
+          <a href="#formulario" class="inline-block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-3 rounded-lg transition">Seja um Revendedor</a>
+        </div>
+        
+        <!-- Modelo 2: Hotelaria -->
+        <div class="partner-card bg-white p-8 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-navy mb-4">Rede Hospped (Hotéis)</h3>
+          <p class="text-gray-600 mb-6">Integre-se à nossa base de parceiros de hospedagem e receba reservas corporativas e acadêmicas qualificadas.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Visibilidade na plataforma Hospped</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Taxa de comissão competitiva</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Gestão de reservas centralizada</span>
+            </li>
+          </ul>
+          <a href="#formulario" class="inline-block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-3 rounded-lg transition">Cadastrar Hotel</a>
+        </div>
+        
+        <!-- Modelo 3: Tecnologia -->
+        <div class="partner-card bg-white p-8 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-navy mb-4">Integração de API</h3>
+          <p class="text-gray-600 mb-6">Para desenvolvedores e empresas de software que desejam consumir nossos dados de Analytics e Receita.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Documentação técnica completa</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Acesso a dados de mercado anonimizados</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 text-sm">Suporte técnico dedicado ao Dev</span>
+            </li>
+          </ul>
+          <a href="#formulario" class="inline-block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-3 rounded-lg transition">Acessar Documentação</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership Form Section -->
+  <section id="formulario" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Proposta de Parceria</h2>
+        <p class="text-lg text-gray-600">Preencha os dados abaixo e nosso time de desenvolvimento de negócios entrará em contato em até 48 horas.</p>
+      </div>
+      
+      <div class="bg-gray-50 p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100" data-aos="zoom-in">
+        <form id="partner-form" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="nome" class="block text-sm font-medium text-gray-700 mb-2">Nome completo</label>
+              <input type="text" id="nome" name="nome" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lightblue focus:border-transparent transition" placeholder="Seu nome">
+            </div>
+            <div>
+              <label for="empresa" class="block text-sm font-medium text-gray-700 mb-2">Empresa / Instituição</label>
+              <input type="text" id="empresa" name="empresa" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lightblue focus:border-transparent transition" placeholder="Nome da organização">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-mail corporativo</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lightblue focus:border-transparent transition" placeholder="seu@empresa.com">
+            </div>
+            <div>
+              <label for="whatsapp" class="block text-sm font-medium text-gray-700 mb-2">WhatsApp / Telefone</label>
+              <input type="tel" id="whatsapp" name="whatsapp" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lightblue focus:border-transparent transition" placeholder="(XX) XXXXX-XXXX">
+            </div>
+          </div>
+
+          <div>
+            <label for="tipo-parceria" class="block text-sm font-medium text-gray-700 mb-2">Tipo de Parceria de Interesse</label>
+            <select id="tipo-parceria" name="tipo-parceria" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lightblue focus:border-transparent transition">
+              <option value="" disabled selected>Selecione uma modalidade</option>
+              <option value="revenda">Revenda de Tecnologia (Analytics)</option>
+              <option value="hotel">Cadastro de Hotel (Hospped)</option>
+              <option value="api">Integração de API / Dados</option>
+              <option value="investidor">Investidor / M&A</option>
+              <option value="outro">Outro tipo de parceria</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-2">Detalhes da proposta</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lightblue focus:border-transparent transition" placeholder="Descreva brevemente como imagina a parceria e o perfil do seu negócio..."></textarea>
+          </div>
+
+          <div class="flex items-start">
+            <input type="checkbox" id="lgpd" name="lgpd" required class="mt-1 mr-3 w-4 h-4 text-lightblue border-gray-300 rounded focus:ring-lightblue">
+            <label for="lgpd" class="text-sm text-gray-600">
+              Concordo com o processamento dos dados conforme a <a href="#" class="text-lightblue hover:underline">Política de Privacidade</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="w-full bg-navy text-white hover:bg-blue-900 font-bold py-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
+            Enviar Proposta de Parceria
+          </button>
+          
+          <p class="text-center text-xs text-gray-500 mt-4">
+            Nossa equipe de parcerias analisa todas as solicitações para garantir fit estratégico.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-blue-100 text-sm">&copy; <span class="current-year"></span> HotelsBook Tecnologia e Hospitalidade LTDA. Todos os direitos reservados.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-blue-100">
+          <a href="index.html" class="hover:text-white transition">Voltar ao início</a>
+          <a href="contato.html" class="hover:text-white transition">Fale Conosco</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

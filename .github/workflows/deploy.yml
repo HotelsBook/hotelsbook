@@ -1,38 +1,42 @@
-name: Build and Deploy
+name: Deploy HotelsBook Static Site
 
+# Triggers:
+# 1. Quando fizer push para a branch main
+# 2. Botão "Run Workflow" manual no GitHub
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
 
+# Permissões necessárias para o GitHub Actions funcionar
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Evita que múltiplos deploys rodem ao mesmo tempo
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
+  # JOB 1: Preparar os arquivos
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-      
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      
-      - name: Build site
-        run: pelican content -o output -s pelicanconf.py
-      
-      - name: Upload artifact
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './output'
+          # Como seus arquivos (index.html, style.css, etc.) estão na raiz:
+          path: '.'
 
+  # JOB 2: Publicar no GitHub Pages
   deploy:
     environment:
       name: github-pages

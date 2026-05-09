@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - HotelsBook | Tecnologia e Consultoria para Hotelaria</title>
+  <meta name="description" content="Conheça a HotelsBook Tecnologia e Hospitalidade LTDA. Holding de soluções integradas: consultoria estratégica, Analytics SaaS, Hospped e ConciergeE.">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            lightblue: '#3b82f6',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    html { scroll-behavior: smooth; }
+    .value-card { transition: all 0.3s ease; border-left: 4px solid transparent; }
+    .value-card:hover { border-left-color: #3b82f6; background: #f8fafc; }
+    .founder-img { transition: transform 0.3s ease; }
+    .founder-img:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-bold text-navy">HotelsBook</a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html#produtos" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Produtos</a>
+          <a href="index.html#servicos" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Serviços</a>
+          <a href="sobre.html" class="text-navy font-medium border-b-2 border-lightblue">Sobre</a>
+          <a href="index.html#carreiras" class="text-gray-700 hover:text-lightblue transition-colors duration-300 font-medium">Carreiras</a>
+          <a href="contato.html" class="bg-navy text-white px-6 py-2 rounded-lg hover:bg-blue-900 transition-all duration-300 font-medium">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-navy via-blue-900 to-lightblue text-white py-28 px-4 overflow-hidden">
+    <div class="absolute inset-0 opacity-15">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1632&q=80" alt="Equipe estratégica" class="w-full h-full object-cover">
+    </div>
+    <div class="relative max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Tecnologia com raízes na operação</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto">Não nascemos de planilhas vazias. A HotelsBook foi construída por quem viveu a hotelaria, entendeu suas dores e decidiu transformar desafios em soluções escaláveis.</p>
+    </div>
+  </section>
+
+  <!-- Nossa Trajetória -->
+  <section class="py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-right">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Nossa Trajetória</h2>
+          <p class="text-gray-600 mb-4 leading-relaxed">A HotelsBook Tecnologia e Hospitalidade LTDA surgiu da constatação de que o setor hoteleiro brasileiro carecia de ferramentas que unissem expertise operacional real a inteligência de dados acessível.</p>
+          <p class="text-gray-600 mb-4 leading-relaxed">Fundada por profissionais com vivência prática em gestão hoteleira, consultoria e desenvolvimento tecnológico, nossa empresa opera como uma holding de soluções integradas. Sob um único CNPJ, concentramos consultoria estratégica, plataforma SaaS de Revenue Management (Analytics), agência de reservas corporativas (Hospped) e, em breve, o ConciergeE.</p>
+          <p class="text-gray-600 leading-relaxed">Acreditamos que a profissionalização do setor passa por transparência, dados confiáveis e parcerias de longo prazo. Cada produto que desenvolvemos é validado na prática antes de chegar ao mercado.</p>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1170&q=80" alt="Colaboração estratégica" class="rounded-2xl shadow-xl">
+          <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100 hidden md:block">
+            <p class="text-3xl font-bold text-lightblue">100%</p>
+            <p class="text-gray-600 text-sm">Capital Nacional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missão, Visão e Valores -->
+  <section class="py-20 bg-gray-50 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Missão, Visão e Valores</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="value-card bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="text-xl font-bold text-navy mb-4 flex items-center">
+            <svg class="w-6 h-6 text-lightblue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            Missão
+          </h3>
+          <p class="text-gray-600 leading-relaxed">Transformar a gestão hoteleira através de tecnologia, consultoria especializada e soluções integradas que maximizam resultados e elevam a experiência do hóspede.</p>
+        </div>
+        
+        <div class="value-card bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-bold text-navy mb-4 flex items-center">
+            <svg class="w-6 h-6 text-lightblue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+            Visão
+          </h3>
+          <p class="text-gray-600 leading-relaxed">Ser referência nacional em serviços de hospitalidade, conectando excelência operacional à inovação tecnológica, com presença consolidada em todas as regiões do Brasil.</p>
+        </div>
+        
+        <div class="value-card bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-bold text-navy mb-4 flex items-center">
+            <svg class="w-6 h-6 text-lightblue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            Valores
+          </h3>
+          <ul class="text-gray-600 space-y-2 text-sm">
+            <li>• Excelência no atendimento</li>
+            <li>• Transparência e ética</li>
+            <li>• Inovação constante</li>
+            <li>• Parceria de longo prazo</li>
+            <li>• Resultados mensuráveis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecossistema -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">O Ecossistema HotelsBook</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+        <p class="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">Atuamos como uma holding de soluções integradas, onde cada braço complementa o outro para entregar valor completo ao cliente.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center card-hover" data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">01</div>
+          <h3 class="font-bold text-navy mb-2">Consultoria</h3>
+          <p class="text-gray-600 text-sm">Diagnóstico, revenue management e planejamento tático para hotéis e pousadas.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center card-hover" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">02</div>
+          <h3 class="font-bold text-navy mb-2">Analytics</h3>
+          <p class="text-gray-600 text-sm">Plataforma SaaS com IA para análise de dados, sazonalidade e benchmark.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">03</div>
+          <h3 class="font-bold text-navy mb-2">Hospped</h3>
+          <p class="text-gray-600 text-sm">Agência de reservas corporativas e acadêmicas com gestão centralizada.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center card-hover" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">04</div>
+          <h3 class="font-bold text-navy mb-2">ConciergeE</h3>
+          <p class="text-gray-600 text-sm">Plataforma futura de concierge inteligente para viagens e mobilidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipe -->
+  <section class="py-20 bg-gray-50 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Nossa Equipe Fundadora</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+        <p class="text-xl text-gray-600 mt-6">Profissionais com experiência prática unindo gestão, tecnologia e relacionamento.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="0">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=634&q=80" alt="Caio Reis" class="founder-img w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-white">
+          <h3 class="font-bold text-navy text-lg">Caio Reis</h3>
+          <p class="text-lightblue font-medium text-sm">Sócio Fundador</p>
+          <p class="text-gray-500 text-xs mt-1">Consultoria B2B e Estratégia</p>
+        </div>
+        
+        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=634&q=80" alt="Mariana Cíntia" class="founder-img w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-white">
+          <h3 class="font-bold text-navy text-lg">Mariana Cíntia</h3>
+          <p class="text-lightblue font-medium text-sm">Sócia Fundadora</p>
+          <p class="text-gray-500 text-xs mt-1">Relacionamento com Clientes</p>
+        </div>
+        
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=634&q=80" alt="Filipe Soares" class="founder-img w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-white">
+          <h3 class="font-bold text-navy text-lg">Filipe Soares</h3>
+          <p class="text-lightblue font-medium text-sm">Sócio Fundador</p>
+          <p class="text-gray-500 text-xs mt-1">Tecnologia e Inovação</p>
+        </div>
+        
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=1170&q=80" alt="Mateus Reis" class="founder-img w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-white">
+          <h3 class="font-bold text-navy text-lg">Mateus Reis</h3>
+          <p class="text-lightblue font-medium text-sm">Sócio Fundador</p>
+          <p class="text-gray-500 text-xs mt-1">Operações e Desenvolvimento</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilares -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Como Trabalhamos</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-navy to-lightblue mx-auto rounded-full"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="flex items-start p-6 bg-gray-50 rounded-xl" data-aos="fade-right">
+          <div class="w-12 h-12 bg-lightblue rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-navy text-lg mb-2">Foco em Resultados Mensuráveis</h3>
+            <p class="text-gray-600 text-sm">Cada ação é acompanhada por KPIs claros. Não vendemos promessas, entregamos métricas que impactam diretamente o EBITDA do cliente.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start p-6 bg-gray-50 rounded-xl" data-aos="fade-left">
+          <div class="w-12 h-12 bg-lightblue rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-navy text-lg mb-2">Tecnologia Proprietária</h3>
+            <p class="text-gray-600 text-sm">Desenvolvemos nossas próprias ferramentas para garantir flexibilidade, segurança dos dados e independência de integrações frágeis.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start p-6 bg-gray-50 rounded-xl" data-aos="fade-right">
+          <div class="w-12 h-12 bg-lightblue rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-navy text-lg mb-2">Atuação Nacional</h3>
+            <p class="text-gray-600 text-sm">Atendemos clientes em todo o território brasileiro, combinando atendimento remoto ágil com visitas presenciais estratégicas quando necessário.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start p-6 bg-gray-50 rounded-xl" data-aos="fade-left">
+          <div class="w-12 h-12 bg-lightblue rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-navy text-lg mb-2">Parcerias de Longo Prazo</h3>
+            <p class="text-gray-600 text-sm">Construímos relacionamentos duradouros baseados em confiança, transparência e entrega contínua de valor, não em contratos engessados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-r from-navy to-blue-900 text-white px-4">
+    <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Faça parte dessa história</h2>
+      <p class="text-xl text-blue-100 mb-8">Seja como cliente, parceiro ou colaborador, há espaço para quem busca transformar a hotelaria brasileira com seriedade e inovação.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contato.html" class="bg-white text-navy hover:bg-blue-50 font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg">Falar com a Equipe</a>
+        <a href="parcerias.html" class="border-2 border-white text-white hover:bg-white hover:text-navy font-bold py-4 px-8 rounded-full transition-all duration-300">Propor Parceria</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-blue-100 text-sm">&copy; <span class="current-year"></span> HotelsBook Tecnologia e Hospitalidade LTDA. Todos os direitos reservados.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-blue-100">
+          <a href="index.html" class="hover:text-white transition">Voltar ao início</a>
+          <a href="sobre.html" class="hover:text-white transition font-medium text-white">Sobre Nós</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
